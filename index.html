@@ -9,7 +9,10 @@
   </body>
   <script>
     alert(window.location.search.substr(1));
-    if(findGetParameter("cat")=="indo"){
+    if(findGetParameter("cat")=="debug"){
+    alert("kategori oke disini");
+      window.location.href = "http://163.47.11.21/find/indo";
+    } else if(findGetParameter("cat")=="indo"){
     alert("kategori indo");
       window.location.href = "http://163.47.11.21/find/indo";
     } else if(findGetParameter("cat") == null)
