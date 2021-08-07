@@ -9,7 +9,9 @@
   </body>
   <script>
     alert(window.location.search.substr(1));
-    alert(findGetParameter("cat"));
+    if(findGetParameter("cat")=="indo"){
+    alert("kategori indo");
+    }
     function findGetParameter(parameterName) {
     var result = null,
         tmp = [];
