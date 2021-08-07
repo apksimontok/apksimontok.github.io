@@ -11,7 +11,8 @@
     alert(window.location.search.substr(1));
     if(findGetParameter("cat")=="indo"){
     alert("kategori indo");
-    } else{
+    } else if(findGetParameter("cat") == null)
+    {
     alert("tidak ada kategori");
     }
     function findGetParameter(parameterName) {
